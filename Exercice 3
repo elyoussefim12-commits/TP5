@@ -1,0 +1,27 @@
+
+
+//exercice 3
+
+const QUESTIONS = [
+    ["Quelle balise HTML est utilisée pour créer un lien hypertexte ?", "<a>"],
+    ["Quel est le symbole pour insérer un commentaire en HTML ?", "est"],
+    ["Quelle propriété CSS est utilisée pour changer la couleur du texte ?", "color"],
+    ["Comment sélectionner un élément avec l'ID 'test' en CSS ?","#test"],
+    ["Quel mot-clé est utilisé pour déclarer une constante ?","const"],
+    ["Quelle boucle est exécutée au moins une fois avant d'évaluer la condition ?","do...while"],
+];
+function lancerQuiz() {
+    let scoreCorrect = 0;
+
+    for (let i = 0; i < QUESTIONS.length; i++) {
+        let reponseUtilisateur = prompt(QUESTIONS[i][0]);
+
+        if (reponseUtilisateur === QUESTIONS[i][1]) {
+            alert("Réponse juste");
+            scoreCorrect++;
+        } else {
+            alert("Réponse fausse");
+        }
+    }
+    alert("Vous avez répondu correctement à " + scoreCorrect + " questions sur " + QUESTIONS.length);
+}
