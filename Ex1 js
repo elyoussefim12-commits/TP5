@@ -1,0 +1,12 @@
+//exercice1
+
+let N1=parseFloat(prompt("entre la valeur de  N1"));
+let N2=parseFloat(prompt("entre la valeur de N2"));
+
+console.log("somme"+(N1+N2));
+
+console.log("mul"+(N1*N2));
+
+console.log("div"+(N1/N2));
+
+console.log("sous"+(N1-N2));
